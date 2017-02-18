@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ControlSQL
 {
-    class TeamMatches
+    class TeamPlayers
     {
         public int Match { get; set; }
-
         public string Stadium { get; set; }
-
+        
         public string TeamA { get; set; }
 
         public string TeamB { get; set; }
@@ -20,12 +19,8 @@ namespace ControlSQL
 
         public int ScoreB { get; set; }
 
-        public string PlayersA { get; set; }
+        public List<Player> PlayersA { get; set; }
 
-        public string GoalA { get; set; }
-
-        public string PlayersB { get; set; }
-
-        public string GoalB { get; set; }
+        public List<Player> PlayersB { get; set; }
     }
 }
